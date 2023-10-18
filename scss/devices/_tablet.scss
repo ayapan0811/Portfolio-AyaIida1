@@ -1,0 +1,206 @@
+@media (min-width:$tabletScreen){
+
+    .title{
+        h2{
+            font-size: 25px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+/* ===== header ========*/
+    header{
+        height: 8vh;
+        .logo{
+            font-size: 30px;
+        }
+        .nav_bar{
+            font-size: 23px;
+        }
+    }
+    .nav_list_desktop{
+        display: none;
+    }
+    .nav_menu{
+        width: 50%;
+    }
+/* ===== intro ========*/
+    main{
+        > section{
+            padding-bottom: 13vh;
+        }
+    }
+    .intro{
+        padding-top: 3vh;
+        figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5vh;
+        }
+        article{
+            position:relative;
+            width: 80%;
+            &:hover .icon{
+                filter: brightness(0.3);
+                transition: .8s;
+            }
+            &:hover .sns{
+                display: block;
+
+        }
+        figcaption{
+            width: 50%;
+        }
+
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .sns{
+        position: absolute;
+        display: none;
+        flex-direction: row;
+        font-size: 5vh;
+        column-gap: 9vh;
+        top:30%;
+        a:hover{
+            color: white;
+        }
+    }
+    .icon{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ===== about ========*/
+    .about{
+        figure{
+            width: 100%;
+            flex-direction: row-reverse;
+            column-gap: 2vh;
+        }
+        img{
+            width: 20%;
+        }
+        figcaption{
+            width: 80%;
+        }
+    }
+/* ===== skills ========*/
+
+    .skills{
+        padding: 7vh 0;
+    }
+    .skills-title{
+        font-size: 15px;
+        padding-bottom: 5vh;
+    }
+    .skills-container{
+        flex-direction: row;
+        column-gap: 2vh;
+    }
+    .skills-content{
+        width: 100%;
+    }
+/* ===== Qualification ========*/
+    .qualification_data:nth-child(odd){
+        text-align: right
+    }
+
+/* ===== Services ========*/
+    .services{
+        > section{
+            width: 90%;
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+        .services-img{
+            width: 15vh;
+        }
+        /* hoverアニメーション */
+        .services-img:hover{
+            transition: transform 1s;
+            transform: rotateY(360deg);
+        }
+        figure{
+            padding: 3vh;
+            box-shadow: 2px 2px 4px 2px gainsboro;
+            border-radius: 10px;
+            flex-direction: column;
+            row-gap: 2vh;
+            align-items: center;
+            transition: .4s;
+        }
+        figure:hover{
+
+            background-color:$lightGray ;
+        }
+
+        figure:nth-child(even){
+            flex-direction: column;
+        }
+    }
+/* ===== POrtfolio ========*/
+    .portfolio{
+        > div{
+            width: 90%;
+        }
+        .portfolio_wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 2vh;
+            justify-content: center;
+        }
+        figure{
+            width: 30%;
+        }
+        a{
+            width: 50%;
+        }
+    }
+
+/* ===== contact ========*/
+    .contact{
+        > section{
+            flex-direction: row;
+        }
+        .contact_right{
+            width: 50%;
+        }
+        form{
+            width: 50%;
+            row-gap: 2vh;
+        }
+        input,
+        textarea{
+            padding:2vh;
+        }
+    }
+/* ===== footer ========*/
+    footer{
+        > section{
+            flex-direction: row;
+            column-gap: 2vh;
+            justify-content: space-between;
+        }
+        .footer_title{
+            width: 55%;
+        }
+        .footer-sns{
+            li{
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+    }
+}

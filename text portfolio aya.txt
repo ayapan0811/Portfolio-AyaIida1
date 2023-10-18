@@ -1,0 +1,30 @@
+*SNS-icon
+github:<i class="fa-brands fa-github"></i>
+instagram:<i class="fa-brands fa-instagram"></i>
+twitter:<i class="fa-brands fa-x-twitter"></i>
+linked-in:<i class="fa-brands fa-linkedin-in"></i>
+facebook:<i class="fa-brands fa-facebook-f"></i>
+
+*logo
+code:<i class="fa-solid fa-code"></i>
+backend:<i class="fa-solid fa-database"></i>
+moon:<i class="fa-regular fa-moon"></i>
+sun:<i class="fa-regular fa-sun"></i>
+up:<i class="fa-solid fa-angles-up"></i>
+education:<i class="fa-solid fa-graduation-cap"></i>
+work:<i class="fa-solid fa-briefcase"></i>
+
+right-slide:<i class="fa-solid fa-angle-right"></i>
+left-slide:<i class="fa-solid fa-angle-left"></i>
+angle-up:<i class="fa-solid fa-angle-up"></i>
+angle-down:<i class="fa-solid fa-angle-down"></i>
+
+tell:<i class="fa-solid fa-phone"></i>
+mail:<i class="fa-regular fa-envelope"></i>
+location:<i class="fa-solid fa-location-dot"></i>
+
+bar:<i class="fa-solid fa-bars"></i>
+close:<i class="fa-solid fa-xmark"></i>
+
+box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定;
+.box {box-shadow: 2px 2px 4px -2px gray inset}

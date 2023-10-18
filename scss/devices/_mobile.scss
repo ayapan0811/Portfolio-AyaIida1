@@ -1,0 +1,497 @@
+@media (min-width:$mobileScreen){
+
+    .title{
+        text-align: center;
+        padding-bottom: 7vh;
+        h2{
+            color: $gray;
+        }
+        h4{
+            font-size: 12px;
+            color: $gray2;
+        }
+    }
+    .nav_bar,
+    .fa-moon,
+    .fa-angle-down,
+    .btn,
+    .fa-angle-right,
+    .fa-angle-left{
+        cursor: pointer;
+    }
+
+    /*=====================
+    header
+    ======================*/
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        height: 8vh;
+        align-items: center;
+        background-color: white;
+        z-index: 99;
+    }
+    .nav_list_desktop{
+        display: none;
+    }
+    nav{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_menu{
+        position: fixed;
+        background-color: white;
+        width: 65%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        //comes out from right
+        transition: .8s;
+        box-shadow: -3px 0px 10px -5px gray;
+    }
+    .nav_list{
+        @include columnRow(4vh);
+        padding-top: 8vh;
+        padding-left: 5vh;
+        a{
+            font-weight: 600;
+            color: $gray;
+            transition: .4s;
+        }
+        a:hover{
+            color: $mainColor;
+        }
+
+    }
+    .logo{
+        font-size: 24px;
+        font-weight: 900;
+        font-style: italic;
+        color:$gray;
+    }
+    .nav_close{
+        font-size: 20px;
+        position: absolute;
+        top: 3%;
+        right: 8%;
+        cursor: pointer;
+    }
+    .nav_btns{
+        display: flex;
+        column-gap: 3vh;
+        align-items: center;
+        font-size: 18px
+    }
+    .show_menu{
+        right: 0;
+    }
+    /*=====================
+    main
+    ======================*/
+    main{
+        @include columnRow(10vh);
+    }
+
+    /*introduction*/
+    .intro{
+        margin-top: 8vh;
+        @include flex-column;
+        align-items: center;
+        figure{
+            width: 90%;
+        }
+        figcaption{
+            @include columnRow(2vh);
+        }
+        article{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 5vh 0;
+            column-gap: 3vh;
+        }
+        h3{
+            color: $gray2;;
+        }
+        p{
+            color: $gray3;
+        }
+    }
+    .sns{
+        @include columnRow(2vh);
+        justify-content: flex-end;
+        font-size: 18px;
+        a{
+            color: $mainColor;
+            transition: .6s;
+        }
+        a:hover{
+            color: lightskyblue;
+        }
+    }
+    .icon{
+        width: 30vh;
+        border-radius: 50%;
+        box-shadow: 2px 2px 3px gray;
+    }
+    .same_button{
+        background-color: $mainColor;
+        color: white;
+        padding: 1vh;
+        border: 2px solid $mainColor;
+        border-radius: 5px;
+        width: 30%;
+        text-align: center;
+        transition: .6s;
+        &:hover{
+            color: $mainColor;
+            background-color: white;
+        }
+    }
+    /*about*/
+    .about{
+        background-color: $lightPink;
+        @include columnRow(1vh);
+        align-items: center;
+        > section{
+            padding: 7vh 0;
+            width:90%;
+            @include flex-column;
+            align-items: center;
+        }
+        figure{
+            @include columnRow(3vh);
+            align-items: center;
+        }
+        // p{
+        //     // text-align: center;
+        // }
+        img{
+            width: 20vh;
+        }
+
+    }
+    /*skills*/
+    .skills{
+        @include columnRow(1vh);
+        align-items: center;
+        >section{
+            width: 90%;
+        }
+        .skills-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        i{
+            font-size: 25px;
+            color: $mainColor;
+        }
+        .title-item{
+            display: flex;
+            align-items: center;
+            column-gap: 2vh
+        }
+        h4{
+            color: $gray3;
+        }
+    }
+    .skills_close .data-container{
+        height: 0;
+        overflow: hidden;
+      }
+    .skills_open{
+        transform: rotate(-180deg);
+    }
+    .skills-open,
+    .skills-container,
+    .data-container{
+        @include columnRow(3vh);
+    }
+    .skills-container{
+        row-gap: 8vh;
+    }
+    .data-container{
+        align-items: center;
+    }
+    .skills-data{
+        @include columnRow(1vh);
+        width: 73%;
+        aside{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        h6{
+            width: 100%;
+            height: 1vh;
+            background-color: $lightPink;
+            border-radius: 10px;
+        }
+        span{
+            display: block;
+            // width: 100%;
+            height: 100%;
+            background-color: $mainColor;
+            border-radius: 10px;
+        }
+        .html{
+            width: 90%;
+        }
+        .css{
+            width: 80%
+        }
+        .javascript{
+            width: 50%
+        }
+        .php{
+            width: 20%
+        }
+    }
+    /*Qualification*/
+    .qualification{
+        @include columnRow(1vh);
+        align-items: center;
+        >section{
+            width: 90%;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+            i{
+                font-size: 20px;
+                color: $gray2;
+            }
+            h3{
+                font-size: 16px;
+                color: $gray2;
+            }
+        }
+    }
+    .qua_desktop{
+        @include columnRow(10vh);
+    }
+    .qualification-btn{
+        display: flex;
+        justify-content: center;
+        column-gap: 3vh;
+        padding-bottom: 5vh;
+
+    }
+    .qualification-container{
+        @include columnRow(5vh);
+    }
+    .rounder{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: $mainColor;
+        border-radius: 50%;
+    }
+    .line{
+        z-index: 0;
+        //to hide line when menu showing
+        display:block;
+        width: 1px;
+        height: 100%;
+        background-color: $mainColor;
+        transform: translate(6px, -7px);
+    }
+    .qualification_data{
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 3vh;
+        h3{
+            color: $gray;
+        }
+        h4{
+            color: $gray3;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    /*Service*/
+    .services{
+        @include flex-column;
+        align-items: center;
+        > section{
+            @include columnRow(5vh);
+            align-items: center;
+            width: 90%;
+        }
+        .services-img{
+            width: 20vh;
+            padding-bottom: 5vh;
+        }
+        figure{
+            display: flex;
+            column-gap: 2vh;
+            img{
+                width: 8vh;
+                height: 8vh;
+            }
+        }
+        figure:nth-child(even){
+            flex-direction: row-reverse;
+        }
+
+    }
+    /*Portfolio*/
+    .portfolio{
+        @include flex-column;
+        align-items: center;
+        > div{
+            width: 80%;
+        }
+        img{
+            width: 100%;
+            // text-align: center;
+        }
+        .portfolio_wrapper{
+            @include columnRow(8vh);
+            align-items: center;
+        }
+        figure,
+        figcaption{
+            width: 90%;
+            @include columnRow(2vh);
+            p{
+                width: 90%;
+            }
+            img{
+                width: 90%;
+                border-radius: 10px;
+            }
+        }
+        figure{
+            align-items: center;
+        }
+        a{
+            background-color: $mainColor;
+            color: white;
+            padding: 1vh;
+            border-radius: 5px;
+            width: 35%;
+            text-align: center;
+
+        }
+
+    }
+
+
+    /*Contact*/
+    .contact{
+        padding-bottom: 10vh;
+        @include flex-column;
+        align-items: center;
+        > section{
+            width: 90%;
+            @include columnRow(7vh);
+
+        }
+    }
+    .contact_right{
+        @include columnRow(2vh);
+        >div{
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+        }
+        i{
+            font-size: 22px;
+            color:$mainColor;
+        }
+        h3{
+            color: $gray;
+        }
+        small,
+        address{
+            color: $gray2;
+        }
+    }
+    form{
+        @include columnRow(3vh);
+    }
+    input,
+    textarea{
+        border: none;
+        background-color: $lightPink;
+        padding: 2vh;
+        border-radius: 10px;
+    }
+    [type="submit"]{
+        background-color: $mainColor;
+        color: white;
+        padding: 2vh;
+        border-radius: 5px;
+        width: 40%;
+        text-align: center;
+        cursor: pointer;
+    }
+    /*Footer*/
+    footer{
+        padding-top: 5vh;
+        background-color: $mainColor;
+        color: white;
+        @include flex-column;
+        align-items: center;
+        >section{
+            padding-bottom: 5vh;
+            width: 90%;
+            @include columnRow(7vh);
+        }
+        h2{
+            padding-bottom: 2vh;
+            font-weight: 600;
+
+        }
+        .quick_link{
+            @include columnRow(1vh);
+            a:hover{
+                transition: .4s;
+                border-bottom: 2px solid white;
+            }
+        }
+        a{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        .footer-sns{
+            display: flex;
+            column-gap: 2vh;
+            li{
+                background-color: white;
+                width: 6vh;
+                height: 6vh;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition:.5s;
+                &:hover{
+                    background-color: lightskyblue;
+                }
+
+            }
+            a{
+                font-size: 24px;
+                color: $mainColor;
+            }
+        }
+        .footer-bottom{
+            padding: 3vh 0;
+            color: $gray3;
+        }
+    }
+
+
+}

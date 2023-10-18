@@ -1,0 +1,111 @@
+@media (min-width:$desktopScreen){
+
+    .title{
+        h2{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+    /* ======= header ========*/
+    header{
+        align-items: center;
+        height: 12vh;
+        .logo{
+            font-size: 28px;
+        }
+        nav{
+            align-items: center;
+        }
+        .nav_menu,
+        .nav_btns{
+            display: none;
+        }
+    }
+    .nav_list_desktop{
+        display: block;
+        display: flex;
+        column-gap: 4vh;
+        a{
+            color: $gray;
+            transition: .4s;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        a:hover{
+            color: $mainColor;
+            border-bottom: 2px solid $mainColor;
+        }
+    }
+    /* ======= intro ========*/
+    main{
+        row-gap: 15vh;
+    }
+    .intro{
+        margin-top: 22vh;
+        article{
+            width: 50%;
+        }
+        // img{
+        //     width: 45vh;
+        //     height: 45vh;
+        // }
+        figcaption{
+            row-gap: 2vh;
+        }
+        .sns{
+            font-size: 7vh;
+        }
+        h1{
+            font-size: 38px;
+        }
+    }
+    /* ======= about ========*/
+    .about{
+        figure{
+            justify-content: center;
+        }
+        figcaption{
+            width: 60%;
+        }
+    }
+    /* ===== Services ========*/
+    .services{
+        > section{
+            width: 80%;
+            column-gap: 5vh;
+        }
+        .services-img{
+            width: 25vh;
+        }
+        figcaption{
+            text-align: center;
+        }
+    }
+
+    /* ======= Qualification ========*/
+    .qualification{
+        .qua_desktop{
+            width: 60%;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 5vh;
+        }
+    }
+    /* ===== footer ========*/
+    footer{
+        .footer_title{
+            width: 50%;
+        }
+        .footer-sns{
+            li{
+                width: 5vh;
+                height: 5vh;
+            }
+        }
+    }
+}
