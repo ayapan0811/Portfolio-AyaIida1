@@ -163,6 +163,12 @@
         }
         figure{
             width: 30%;
+            img{
+                height: 15vh;
+            }
+        }
+        figcaption{
+            display: none;
         }
         a{
             width: 50%;

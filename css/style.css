@@ -411,7 +411,7 @@ li {
     align-items: center;
   }
   .portfolio > div {
-    width: 80%;
+    width: 90%;
   }
   .portfolio img {
     width: 100%;
@@ -419,27 +419,26 @@ li {
   .portfolio .portfolio_wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 8vh;
+    row-gap: 5vh;
     align-items: center;
   }
-  .portfolio figure,
-  .portfolio figcaption {
+  .portfolio figure {
     width: 90%;
     display: flex;
     flex-direction: column;
     row-gap: 2vh;
+    align-items: center;
   }
-  .portfolio figure p,
-  .portfolio figcaption p {
-    width: 90%;
-  }
-  .portfolio figure img,
-  .portfolio figcaption img {
-    width: 90%;
+  .portfolio figure img {
+    width: 100%;
+    height: 35vh;
     border-radius: 10px;
   }
-  .portfolio figure {
-    align-items: center;
+  .portfolio figcaption {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
   }
   .portfolio a {
     background-color: #fb6f92;
@@ -724,6 +723,12 @@ li {
   .portfolio figure {
     width: 30%;
   }
+  .portfolio figure img {
+    height: 15vh;
+  }
+  .portfolio figcaption {
+    display: none;
+  }
   .portfolio a {
     width: 50%;
   }
@@ -843,6 +848,10 @@ li {
     justify-content: space-between;
     -moz-column-gap: 5vh;
          column-gap: 5vh;
+  }
+  /* ======= portfolio ========*/
+  .portfolio figure img {
+    height: 30vh;
   }
   /* ===== footer ========*/
   footer .footer_title {

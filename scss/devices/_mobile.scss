@@ -348,30 +348,29 @@
         @include flex-column;
         align-items: center;
         > div{
-            width: 80%;
+            width: 90%;
         }
         img{
             width: 100%;
             // text-align: center;
         }
         .portfolio_wrapper{
-            @include columnRow(8vh);
+            @include columnRow(5vh);
             align-items: center;
         }
-        figure,
-        figcaption{
+        figure{
             width: 90%;
             @include columnRow(2vh);
-            p{
-                width: 90%;
-            }
+            align-items: center;
             img{
-                width: 90%;
+                width: 100%;
+                height: 35vh;
                 border-radius: 10px;
             }
         }
-        figure{
-            align-items: center;
+        figcaption{
+            width: 100%;
+            @include columnRow(2vh);
         }
         a{
             background-color: $mainColor;
@@ -380,7 +379,6 @@
             border-radius: 5px;
             width: 35%;
             text-align: center;
-
         }
 
     }
