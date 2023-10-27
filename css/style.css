@@ -608,7 +608,7 @@ li {
   }
   .intro article {
     position: relative;
-    width: 80%;
+    width: 50%;
   }
   .intro article:hover .icon {
     filter: brightness(0.3);
@@ -833,7 +833,7 @@ li {
     margin-top: 22vh;
   }
   .intro article {
-    width: 50%;
+    width: 30%;
   }
   .intro figcaption {
     row-gap: 2vh;

@@ -35,6 +35,9 @@
     }
     .intro{
         padding-top: 3vh;
+        // img{
+        //     width: 90%;
+        // }
         figure{
             display: flex;
             justify-content: center;
@@ -43,7 +46,7 @@
         }
         article{
             position:relative;
-            width: 80%;
+            width: 50%;
             &:hover .icon{
                 filter: brightness(0.3);
                 transition: .8s;
