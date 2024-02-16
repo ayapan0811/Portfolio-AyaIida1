@@ -14,7 +14,8 @@ html {
 
 p {
   color: #6c757d;
-  line-height: 1.5;
+  line-height: 2;
+  letter-spacing: 0.08em;
 }
 
 body {
@@ -36,7 +37,7 @@ li {
   list-style-type: none;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .title {
     text-align: center;
     padding-bottom: 7vh;
@@ -363,6 +364,8 @@ li {
     transform: translate(6px, -7px);
   }
   .qualification_data {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     -moz-column-gap: 3vh;
